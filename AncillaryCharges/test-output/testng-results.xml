@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="9" ignored="0" total="18" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2008606" started-at="2020-12-21T16:29:52Z" finished-at="2020-12-21T17:03:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2008606" started-at="2020-12-21T16:29:52Z" finished-at="2020-12-21T17:03:21Z">
+      <class name="com.qa.testcases.AncillaryChargeCreation">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setExtent" is-config="true" duration-ms="286" started-at="2020-12-21T16:29:52Z" finished-at="2020-12-21T16:29:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="17694" started-at="2020-12-21T16:29:53Z" finished-at="2020-12-21T16:30:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="customer_payment_charge_selection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="customer_payment_charge_selection" duration-ms="56956" started-at="2020-12-21T16:30:11Z" data-provider="customer_payment" finished-at="2020-12-21T16:31:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bad Debt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Customer Payment with charges]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_payment_charge_selection -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="784" started-at="2020-12-21T16:31:08Z" finished-at="2020-12-21T16:31:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customer_payment_charge_selection status=SUCCESS method=AncillaryChargeCreation.customer_payment_charge_selection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="13242" started-at="2020-12-21T16:31:09Z" finished-at="2020-12-21T16:31:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="customer_payment_charge_selection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="customer_payment_charge_selection" duration-ms="52410" started-at="2020-12-21T16:31:22Z" data-provider="customer_payment" finished-at="2020-12-21T16:32:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Full Payment with Bank Charges]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<true> but was:<false>
+at junit.framework.Assert.fail(Assert.java:57)
+at junit.framework.Assert.failNotEquals(Assert.java:329)
+at junit.framework.Assert.assertEquals(Assert.java:78)
+at junit.framework.Assert.assertEquals(Assert.java:174)
+at junit.framework.Assert.assertEquals(Assert.java:181)
+at com.qa.pages.AncillaryCharges.charge_selection(AncillaryCharges.java:480)
+at com.qa.testcases.AncillaryChargeCreation.customer_payment_charge_selection(AncillaryChargeCreation.java:94)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_payment_charge_selection -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="794" started-at="2020-12-21T16:32:14Z" finished-at="2020-12-21T16:32:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customer_payment_charge_selection status=FAILURE method=AncillaryChargeCreation.customer_payment_charge_selection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="15586" started-at="2020-12-21T16:32:15Z" finished-at="2020-12-21T16:32:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="customer_payment_charge_selection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="customer_payment_charge_selection" duration-ms="57275" started-at="2020-12-21T16:32:31Z" data-provider="customer_payment" finished-at="2020-12-21T16:33:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Partial payment]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_payment_charge_selection -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="829" started-at="2020-12-21T16:33:28Z" finished-at="2020-12-21T16:33:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customer_payment_charge_selection status=SUCCESS method=AncillaryChargeCreation.customer_payment_charge_selection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="15932" started-at="2020-12-21T16:33:29Z" finished-at="2020-12-21T16:33:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="customer_payment_charge_selection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="customer_payment_charge_selection" duration-ms="63442" started-at="2020-12-21T16:33:45Z" data-provider="customer_payment" finished-at="2020-12-21T16:34:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Write Off]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Write Off Charge creation Test case]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_payment_charge_selection -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="817" started-at="2020-12-21T16:34:48Z" finished-at="2020-12-21T16:34:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customer_payment_charge_selection status=SUCCESS method=AncillaryChargeCreation.customer_payment_charge_selection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="13415" started-at="2020-12-21T16:34:49Z" finished-at="2020-12-21T16:35:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="multiple_charges(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="multiple_charges" duration-ms="79332" started-at="2020-12-21T16:35:03Z" data-provider="multiple_charges" finished-at="2020-12-21T16:36:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1,2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges,Bad Debt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Multiple  invoices and multiple charges]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiple_charges -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="757" started-at="2020-12-21T16:36:22Z" finished-at="2020-12-21T16:36:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiple_charges status=SUCCESS method=AncillaryChargeCreation.multiple_charges(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="13388" started-at="2020-12-21T16:36:23Z" finished-at="2020-12-21T16:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="multiple_charges(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="multiple_charges" duration-ms="50272" started-at="2020-12-21T16:36:36Z" data-provider="multiple_charges" finished-at="2020-12-21T16:37:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1,2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges,Bad Debt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Multiple charges selection including Bank Charges for single payment with full amount]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<true> but was:<false>
+at junit.framework.Assert.fail(Assert.java:57)
+at junit.framework.Assert.failNotEquals(Assert.java:329)
+at junit.framework.Assert.assertEquals(Assert.java:78)
+at junit.framework.Assert.assertEquals(Assert.java:174)
+at junit.framework.Assert.assertEquals(Assert.java:181)
+at com.qa.pages.AncillaryCharges.single_payment_multiple_same_charges(AncillaryCharges.java:730)
+at com.qa.testcases.AncillaryChargeCreation.multiple_charges(AncillaryChargeCreation.java:107)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiple_charges -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="780" started-at="2020-12-21T16:37:26Z" finished-at="2020-12-21T16:37:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiple_charges status=FAILURE method=AncillaryChargeCreation.multiple_charges(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="19644" started-at="2020-12-21T16:37:27Z" finished-at="2020-12-21T16:37:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="multiple_charges(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="multiple_charges" duration-ms="191315" started-at="2020-12-21T16:37:47Z" data-provider="multiple_charges" finished-at="2020-12-21T16:40:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1,2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Write Off,Bad Debt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Multiple charge selection for single payment including write off with partial amount]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 0, Size: 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+at java.util.ArrayList.get(ArrayList.java:435)
+at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:40)
+at com.sun.proxy.$Proxy15.get(Unknown Source)
+at com.qa.pages.AncillaryCharges.Customer_Navigation_Accepting_Payment(AncillaryCharges.java:308)
+at com.qa.pages.AncillaryCharges.single_payment_multiple_same_charges(AncillaryCharges.java:545)
+at com.qa.testcases.AncillaryChargeCreation.multiple_charges(AncillaryChargeCreation.java:107)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiple_charges -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="848" started-at="2020-12-21T16:40:58Z" finished-at="2020-12-21T16:40:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiple_charges status=FAILURE method=AncillaryChargeCreation.multiple_charges(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="27995" started-at="2020-12-21T16:40:59Z" finished-at="2020-12-21T16:41:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="multiple_charges(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="multiple_charges" duration-ms="160892" started-at="2020-12-21T16:41:27Z" data-provider="multiple_charges" finished-at="2020-12-21T16:44:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1,2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Freight Charges,Bad Debt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Multiple charges selection for single payment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiple_charges -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="775" started-at="2020-12-21T16:44:08Z" finished-at="2020-12-21T16:44:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiple_charges status=SUCCESS method=AncillaryChargeCreation.multiple_charges(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="25986" started-at="2020-12-21T16:44:09Z" finished-at="2020-12-21T16:44:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="multiple_charges(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="multiple_charges" duration-ms="43855" started-at="2020-12-21T16:44:35Z" data-provider="multiple_charges" finished-at="2020-12-21T16:45:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1,2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bad Debt,Bad Debt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Same Charge Multiple times]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<true> but was:<false>
+at junit.framework.Assert.fail(Assert.java:57)
+at junit.framework.Assert.failNotEquals(Assert.java:329)
+at junit.framework.Assert.assertEquals(Assert.java:78)
+at junit.framework.Assert.assertEquals(Assert.java:174)
+at junit.framework.Assert.assertEquals(Assert.java:181)
+at com.qa.pages.AncillaryCharges.single_payment_multiple_same_charges(AncillaryCharges.java:651)
+at com.qa.testcases.AncillaryChargeCreation.multiple_charges(AncillaryChargeCreation.java:107)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiple_charges -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="777" started-at="2020-12-21T16:45:18Z" finished-at="2020-12-21T16:45:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiple_charges status=FAILURE method=AncillaryChargeCreation.multiple_charges(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="24014" started-at="2020-12-21T16:45:19Z" finished-at="2020-12-21T16:45:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="total_write_off(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="total_write_off" duration-ms="98884" started-at="2020-12-21T16:45:43Z" data-provider="total_write_off" finished-at="2020-12-21T16:47:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Write Off]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Total amount as WriteOff testcase]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<true> but was:<false>
+at junit.framework.Assert.fail(Assert.java:57)
+at junit.framework.Assert.failNotEquals(Assert.java:329)
+at junit.framework.Assert.assertEquals(Assert.java:78)
+at junit.framework.Assert.assertEquals(Assert.java:174)
+at junit.framework.Assert.assertEquals(Assert.java:181)
+at com.qa.pages.AncillaryCharges.total_write_off(AncillaryCharges.java:972)
+at com.qa.testcases.AncillaryChargeCreation.total_write_off(AncillaryChargeCreation.java:120)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- total_write_off -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="814" started-at="2020-12-21T16:47:22Z" finished-at="2020-12-21T16:47:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=total_write_off status=FAILURE method=AncillaryChargeCreation.total_write_off(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="21813" started-at="2020-12-21T16:47:23Z" finished-at="2020-12-21T16:47:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="total_write_off(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="total_write_off" duration-ms="75629" started-at="2020-12-21T16:47:45Z" data-provider="total_write_off" finished-at="2020-12-21T16:49:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Editing journal entry testcase]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<true> but was:<false>
+at junit.framework.Assert.fail(Assert.java:57)
+at junit.framework.Assert.failNotEquals(Assert.java:329)
+at junit.framework.Assert.assertEquals(Assert.java:78)
+at junit.framework.Assert.assertEquals(Assert.java:174)
+at junit.framework.Assert.assertEquals(Assert.java:181)
+at com.qa.pages.AncillaryCharges.total_write_off(AncillaryCharges.java:941)
+at com.qa.testcases.AncillaryChargeCreation.total_write_off(AncillaryChargeCreation.java:120)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- total_write_off -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="836" started-at="2020-12-21T16:49:00Z" finished-at="2020-12-21T16:49:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=total_write_off status=FAILURE method=AncillaryChargeCreation.total_write_off(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="20018" started-at="2020-12-21T16:49:01Z" finished-at="2020-12-21T16:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="total_write_off(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="total_write_off" duration-ms="169741" started-at="2020-12-21T16:49:21Z" data-provider="total_write_off" finished-at="2020-12-21T16:52:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Changing Charge amount testcase]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- total_write_off -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="798" started-at="2020-12-21T16:52:11Z" finished-at="2020-12-21T16:52:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=total_write_off status=SUCCESS method=AncillaryChargeCreation.total_write_off(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="23263" started-at="2020-12-21T16:52:12Z" finished-at="2020-12-21T16:52:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="total_write_off(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="total_write_off" duration-ms="104750" started-at="2020-12-21T16:52:35Z" data-provider="total_write_off" finished-at="2020-12-21T16:54:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Percentage as Charge Amount  testcase]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- total_write_off -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="812" started-at="2020-12-21T16:54:20Z" finished-at="2020-12-21T16:54:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=total_write_off status=SUCCESS method=AncillaryChargeCreation.total_write_off(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="19663" started-at="2020-12-21T16:54:21Z" finished-at="2020-12-21T16:54:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="total_write_off(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="total_write_off" duration-ms="164434" started-at="2020-12-21T16:54:40Z" data-provider="total_write_off" finished-at="2020-12-21T16:57:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Changing Charge name testcase]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Bad Debt]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@id='inpt_custpage_glaccount55_arrow']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'DESKTOP-3GNVT0U', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Sindhuja\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6daa7a0687a8095e11ed70d2f2fba5c7
+*** Element info: {Using=xpath, value=//img[@id='inpt_custpage_glaccount55_arrow']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@id='inpt_custpage_glaccount55_arrow']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'DESKTOP-3GNVT0U', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Sindhuja\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6daa7a0687a8095e11ed70d2f2fba5c7
+*** Element info: {Using=xpath, value=//img[@id='inpt_custpage_glaccount55_arrow']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at com.qa.pages.AncillaryCharges.total_write_off(AncillaryCharges.java:1035)
+at com.qa.testcases.AncillaryChargeCreation.total_write_off(AncillaryChargeCreation.java:120)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- total_write_off -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="828" started-at="2020-12-21T16:57:25Z" finished-at="2020-12-21T16:57:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=total_write_off status=FAILURE method=AncillaryChargeCreation.total_write_off(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="15246" started-at="2020-12-21T16:57:26Z" finished-at="2020-12-21T16:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="deleting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="deleting" duration-ms="74957" started-at="2020-12-21T16:57:41Z" data-provider="deleting" finished-at="2020-12-21T16:58:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[deleting ancillary]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[don't delete]> but was:<[Are you sure you want to delete this record?]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<[don't delete]> but was:<[Are you sure you want to delete this record?]>
+at junit.framework.Assert.assertEquals(Assert.java:100)
+at junit.framework.Assert.assertEquals(Assert.java:107)
+at com.qa.pages.AncillaryCharges.deleting_payment_journal_ancillary(AncillaryCharges.java:1301)
+at com.qa.testcases.AncillaryChargeCreation.deleting(AncillaryChargeCreation.java:133)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleting -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="766" started-at="2020-12-21T16:58:56Z" finished-at="2020-12-21T16:58:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleting status=FAILURE method=AncillaryChargeCreation.deleting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="32018" started-at="2020-12-21T16:58:57Z" finished-at="2020-12-21T16:59:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="deleting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="deleting" duration-ms="59066" started-at="2020-12-21T16:59:29Z" data-provider="deleting" finished-at="2020-12-21T17:00:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[deleting journal]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[don't delete]> but was:<[Are you sure you want to delete this transaction?]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<[don't delete]> but was:<[Are you sure you want to delete this transaction?]>
+at junit.framework.Assert.assertEquals(Assert.java:100)
+at junit.framework.Assert.assertEquals(Assert.java:107)
+at com.qa.pages.AncillaryCharges.deleting_payment_journal_ancillary(AncillaryCharges.java:1268)
+at com.qa.testcases.AncillaryChargeCreation.deleting(AncillaryChargeCreation.java:133)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleting -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="758" started-at="2020-12-21T17:00:28Z" finished-at="2020-12-21T17:00:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleting status=FAILURE method=AncillaryChargeCreation.deleting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="15613" started-at="2020-12-21T17:00:29Z" finished-at="2020-12-21T17:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="deleting" duration-ms="83422" started-at="2020-12-21T17:00:44Z" data-provider="deleting" finished-at="2020-12-21T17:02:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Charges]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[deleting  payment and related transactions]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleting -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="768" started-at="2020-12-21T17:02:08Z" finished-at="2020-12-21T17:02:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleting status=SUCCESS method=AncillaryChargeCreation.deleting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="setUp" is-config="true" duration-ms="23365" started-at="2020-12-21T17:02:08Z" finished-at="2020-12-21T17:02:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="chargeCreation(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="chargeCreation" duration-ms="47608" started-at="2020-12-21T17:02:32Z" data-provider="charge_creation" finished-at="2020-12-21T17:03:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ancillary_charge_test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bank Service Charges]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bank Account used in Payment]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ancillary charge creation with valid and invalid data]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chargeCreation -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="tearDown" is-config="true" duration-ms="795" started-at="2020-12-21T17:03:19Z" finished-at="2020-12-21T17:03:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chargeCreation status=SUCCESS method=AncillaryChargeCreation.chargeCreation(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.qa.testcases.AncillaryChargeCreation@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.qa.testcases.AncillaryChargeCreation@59494225]" name="endReport" is-config="true" duration-ms="718" started-at="2020-12-21T17:03:20Z" finished-at="2020-12-21T17:03:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.qa.testcases.AncillaryChargeCreation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.qa.testcases.AncillaryChargeCreation">
+        <methods>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="setExtent"/>
+          <include name="customer_payment_charge_selection" invocation-numbers="1"/>
+          <include name="multiple_charges" invocation-numbers="1 2 4"/>
+          <include name="total_write_off" invocation-numbers="0 1 4"/>
+          <include name="setUp"/>
+          <include name="deleting" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qa.testcases.AncillaryChargeCreation -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
